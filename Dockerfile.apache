@@ -1,0 +1,9 @@
+FROM httpd
+
+WORKDIR /www/data
+
+COPY ./httpd.conf /usr/local/apache2/conf/httpd.conf
+
+COPY ./index.html /www/data
+
+EXPOSE 80
